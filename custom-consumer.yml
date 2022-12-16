@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  mem_consumer:
+    image: devjare/memory-consumer:latest
+    container_name: mem_consumer
+    environment:
+      - CHOICE=1
+    labels:
+      user: devjare
+    tty: true
+
