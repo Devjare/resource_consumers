@@ -13,13 +13,9 @@ low = 0.3
 mid = 0.6
 high = 0.9
 
-x = 0
-
 LOW = (lowest, low)
 MED = (low, mid)
 HIGH = (mid, high)
-
-s = ''
 
 def reset_variables():
     os.environ["UTILIZATION"] = "1"
