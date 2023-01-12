@@ -1,10 +1,16 @@
-version: "3.8"
+version: "3.3"
 services:
   mem_consumer:
     image: devjare/memory-consumer:latest
     container_name: mem_consumer
     environment:
       - CHOICE=1
+    labels:
+      user: devjare
+    tty: true
+  cpu_consumer:
+    image: devjare/cpu-consumer:latest
+    container_name: cpu_consumer
     labels:
       user: devjare
     tty: true

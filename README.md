@@ -8,7 +8,7 @@ low to hight usage based on specified container limitation.
 
 For memory consumption the next endpoints are available:
 
-- To start consuming: ***/start\_consuming*** with *no args*
+- To start consuming: ***/start\_consumption*** with *no args*
 - To change utilization: ***/change_utilization?utilization_level=n***, 
 where $n=\{1, 2, 3\}$ for LOW, MED or HIGH utilization. Considering that:
     - $utilization\_percentage=random(start, end)$ where
@@ -18,7 +18,7 @@ where $n=\{1, 2, 3\}$ for LOW, MED or HIGH utilization. Considering that:
     - LOW Utilization consumes $utilization\_percentage \times TOTAL\_SYSTEM\_MEMORY$ RAM
     - MED Utilization consumes $utilization\_percentage \times TOTAL\_SYSTEM\_MEMORY$ RAM
     - HIGH Utilization consumes $utilization\_percentage \times TOTAL\_SYSTEM\_MEMORY$ RAM
-- To stop consuming: ***/stop\_consuming***  with *no args*
+- To stop consuming: ***/stop\_consumption***  with *no args*
 
 ### Network consumption
 ### CPU consumption
