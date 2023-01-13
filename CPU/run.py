@@ -43,8 +43,12 @@ def start_consumption():
 
 @app.route("/stop_consumption", methods=["GET"])
 def stop_consumption():
-    for i in range(len(process_list)):
-        kill_process(process_list[i])
+    while len(process_list) > 0:
+        kill_process(process_list[0])
+        print(f"element={process_list[0]}")
+        print(f"List: {process_list}")
+        process_list.pop(0)
+        print(f"List: {process_list}")
 
     return { "pids": process_list }
 
@@ -54,7 +58,21 @@ def get_current_processes():
 
 def start_new_process(n=10000):
     process = subprocess.Popen(args=["python", "cpu_consumer.py", f"{n}"])
-    process_list.append(process.pid)
+    # process_list.append(process.pid)
+    return { 'pid': process.pid }
+
+@app.route("/add_process")
+def add_process():
+    pid = start_new_process()
+    process_list.append(pid['pid'])
+    return { 'pid': pid }
+
+@app.route("/remove_process")
+def remove_process():
+    pid = process_list.pop(0)
+    kill_process(pid)
+    return { 'pid': pid }
+
 
 @app.route("/change_utilization")
 def change_utilization():
@@ -93,8 +111,10 @@ def change_utilization():
     
     current_level = new_level
     return { 'processes': str(process_list) }
+
 def kill_process(pid):
     os.kill(pid, signal.SIGTERM)
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=8567)
+    PORT = int(os.getenv("PORT", "57610"))
+    app.run(debug=True, host="0.0.0.0", port=PORT)
