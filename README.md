@@ -20,5 +20,16 @@ where $n=\{1, 2, 3\}$ for LOW, MED or HIGH utilization. Considering that:
     - HIGH Utilization consumes $utilization\_percentage \times TOTAL\_SYSTEM\_MEMORY$ RAM
 - To stop consuming: ***/stop\_consumption***  with *no args*
 
-### Network consumption
 ### CPU consumption
+For cpu consumption the next endpoints are available:
+
+- Add process: ***/add\_process*** with *no args*.
+- Remove process: ***/remove\_process*** with *no args*.
+- Show processes ***/current\_processes*** with *no args*.
+- Stop all processes: ***/stop\_consumption*** with *no args*.
+
+The process is a simple bubble sort to an array of size 10000 in an infinite loop, until
+***/stop_consumption*** is called, or all processes were stopped by calling enough 
+***/remove\_process***.
+
+### Network consumption
