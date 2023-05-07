@@ -13,7 +13,5 @@ def bubble_sort(arr):
     return arr
 
 n = int(sys.argv[1])
-i = 0
 print(f"Iteration #{i} applying bubble sort to array of size {n}.")
-arr = bubble_sort(np.random.randint(1,1000,n))
-i += 1
+bubble_sort(np.random.randint(1,1000,n))
