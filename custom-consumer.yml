@@ -14,4 +14,16 @@ services:
     labels:
       user: devjare
     tty: true
+  fs_consumer:
+    image: devjare/fs-consumer:latest
+    container_name: fs_consumer
+    labels:
+      user: devjare
+    tty: true
+  net_consumer:
+    image: devjare/net-consumer:latest
+    container_name: net_consumer
+    labels:
+      user: devjare
+    tty: true
 

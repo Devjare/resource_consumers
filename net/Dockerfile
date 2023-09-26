@@ -2,8 +2,10 @@ FROM python:3.10.9-slim-buster
 
 LABEL author=devjare
 
-COPY . /cpu_app
-WORKDIR /cpu_app
+COPY . /net_app
+WORKDIR /net_app
+
+EXPOSE 9008
 
 RUN pip install -r requirements.txt
 

@@ -1,0 +1,445 @@
+time="2023-07-27T15:45:52.127123261-06:00" level=info msg="Starting up"
+time="2023-07-27T15:45:52.129939395-06:00" level=warning msg="Binding to IP address without --tlsverify is insecure and gives root access on this machine to everyone who has access to your network." host="tcp://192.168.100.7:2375"
+time="2023-07-27T15:45:52.130043003-06:00" level=warning msg="Binding to an IP address, even on localhost, can also give access to scripts run in a browser. Be safe out there!" host="tcp://192.168.100.7:2375"
+time="2023-07-27T15:45:53.130734304-06:00" level=warning msg="Binding to an IP address without --tlsverify is deprecated. Startup is intentionally being slowed down to show this message" host="tcp://192.168.100.7:2375"
+time="2023-07-27T15:45:53.130880885-06:00" level=warning msg="Please consider generating tls certificates with client validation to prevent exposing unauthenticated root access to your network" host="tcp://192.168.100.7:2375"
+time="2023-07-27T15:45:53.130954584-06:00" level=warning msg="You can override this by explicitly specifying '--tls=false' or '--tlsverify=false'" host="tcp://192.168.100.7:2375"
+time="2023-07-27T15:45:53.131002338-06:00" level=warning msg="Support for listening on TCP without authentication or explicit intent to run without authentication will be removed in the next release" host="tcp://192.168.100.7:2375"
+time="2023-07-27T15:46:08.138930234-06:00" level=info msg="containerd not running, starting managed containerd"
+time="2023-07-27T15:46:08.144335291-06:00" level=info msg="started new containerd process" address=/var/run/docker/containerd/containerd.sock module=libcontainerd pid=230880
+time="2023-07-27T15:46:08.310895707-06:00" level=info msg="starting containerd" revision=3dce8eb055cbb6872793272b4f20ed16117344f8 version=1.6.21
+time="2023-07-27T15:46:08.352790833-06:00" level=info msg="loading plugin \"io.containerd.content.v1.content\"..." type=io.containerd.content.v1
+time="2023-07-27T15:46:08.352987151-06:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.aufs\"..." type=io.containerd.snapshotter.v1
+time="2023-07-27T15:46:08.363796921-06:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not supported (modprobe aufs failed: exit status 1 \"modprobe: FATAL: Module aufs not found in directory /lib/modules/6.4.4-100.fc37.x86_64\\n\"): skip plugin" type=io.containerd.snapshotter.v1
+time="2023-07-27T15:46:08.364397141-06:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." type=io.containerd.snapshotter.v1
+time="2023-07-27T15:46:08.365292112-06:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." type=io.containerd.snapshotter.v1
+time="2023-07-27T15:46:08.365375461-06:00" level=warning msg="failed to load plugin io.containerd.snapshotter.v1.devmapper" error="devmapper not configured"
+time="2023-07-27T15:46:08.365425694-06:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.native\"..." type=io.containerd.snapshotter.v1
+time="2023-07-27T15:46:08.365539033-06:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.overlayfs\"..." type=io.containerd.snapshotter.v1
+time="2023-07-27T15:46:08.365912824-06:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.zfs\"..." type=io.containerd.snapshotter.v1
+time="2023-07-27T15:46:08.366547382-06:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /home/devjare/docker/containerd/daemon/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+time="2023-07-27T15:46:08.366627086-06:00" level=info msg="loading plugin \"io.containerd.metadata.v1.bolt\"..." type=io.containerd.metadata.v1
+time="2023-07-27T15:46:08.366715123-06:00" level=warning msg="could not use snapshotter devmapper in metadata plugin" error="devmapper not configured"
+time="2023-07-27T15:46:08.366777474-06:00" level=info msg="metadata content store policy set" policy=shared
+time="2023-07-27T15:46:08.368211762-06:00" level=info msg="loading plugin \"io.containerd.differ.v1.walking\"..." type=io.containerd.differ.v1
+time="2023-07-27T15:46:08.368344598-06:00" level=info msg="loading plugin \"io.containerd.event.v1.exchange\"..." type=io.containerd.event.v1
+time="2023-07-27T15:46:08.368407891-06:00" level=info msg="loading plugin \"io.containerd.gc.v1.scheduler\"..." type=io.containerd.gc.v1
+time="2023-07-27T15:46:08.368532068-06:00" level=info msg="loading plugin \"io.containerd.service.v1.introspection-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.368637329-06:00" level=info msg="loading plugin \"io.containerd.service.v1.containers-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.368735551-06:00" level=info msg="loading plugin \"io.containerd.service.v1.content-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.368817597-06:00" level=info msg="loading plugin \"io.containerd.service.v1.diff-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.368874548-06:00" level=info msg="loading plugin \"io.containerd.service.v1.images-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.368927326-06:00" level=info msg="loading plugin \"io.containerd.service.v1.leases-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.368979672-06:00" level=info msg="loading plugin \"io.containerd.service.v1.namespaces-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.369031621-06:00" level=info msg="loading plugin \"io.containerd.service.v1.snapshots-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.369083052-06:00" level=info msg="loading plugin \"io.containerd.runtime.v1.linux\"..." type=io.containerd.runtime.v1
+time="2023-07-27T15:46:08.369343372-06:00" level=info msg="loading plugin \"io.containerd.runtime.v2.task\"..." type=io.containerd.runtime.v2
+time="2023-07-27T15:46:08.369586053-06:00" level=info msg="loading plugin \"io.containerd.monitor.v1.cgroups\"..." type=io.containerd.monitor.v1
+time="2023-07-27T15:46:08.370321885-06:00" level=info msg="loading plugin \"io.containerd.service.v1.tasks-service\"..." type=io.containerd.service.v1
+time="2023-07-27T15:46:08.370459738-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.370526264-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.restart\"..." type=io.containerd.internal.v1
+time="2023-07-27T15:46:08.370688443-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.containers\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.370753628-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.content\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.370810211-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.diff\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.370877132-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.events\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.370939180-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.healthcheck\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.370989719-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.images\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.371048634-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.leases\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.371098592-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.namespaces\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.371185406-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.opt\"..." type=io.containerd.internal.v1
+time="2023-07-27T15:46:08.371496501-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.snapshots\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.371560922-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.tasks\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.371613397-06:00" level=info msg="loading plugin \"io.containerd.grpc.v1.version\"..." type=io.containerd.grpc.v1
+time="2023-07-27T15:46:08.371693907-06:00" level=info msg="loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." type=io.containerd.tracing.processor.v1
+time="2023-07-27T15:46:08.371755459-06:00" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="no OpenTelemetry endpoint: skip plugin" type=io.containerd.tracing.processor.v1
+time="2023-07-27T15:46:08.371804797-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.tracing\"..." type=io.containerd.internal.v1
+time="2023-07-27T15:46:08.371865542-06:00" level=error msg="failed to initialize a tracing processor \"otlp\"" error="no OpenTelemetry endpoint: skip plugin"
+time="2023-07-27T15:46:08.372572144-06:00" level=info msg=serving... address=/var/run/docker/containerd/containerd-debug.sock
+time="2023-07-27T15:46:08.372856415-06:00" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock.ttrpc
+time="2023-07-27T15:46:08.373148519-06:00" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock
+time="2023-07-27T15:46:08.373276623-06:00" level=info msg="containerd successfully booted in 0.064896s"
+time="2023-07-27T15:46:08.387504307-06:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+time="2023-07-27T15:46:08.604933704-06:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+time="2023-07-27T15:46:08.879825113-06:00" level=info msg="Loading containers: start."
+time="2023-07-27T15:46:09.410608053-06:00" level=info msg="Firewalld: docker zone already exists, returning"
+time="2023-07-27T15:46:10.143883028-06:00" level=info msg="Firewalld: interface br-20049fbd466f already part of docker zone, returning"
+time="2023-07-27T15:46:10.522334162-06:00" level=info msg="Firewalld: interface docker0 already part of docker zone, returning"
+time="2023-07-27T15:46:10.882333347-06:00" level=info msg="Firewalld: interface br-7f2645d29361 already part of docker zone, returning"
+time="2023-07-27T15:46:11.643939253-06:00" level=info msg="Removing stale sandbox 7c9c01b5c3e9fc4248152e95f6f70f179e7b1d13c638f0b20c4122fbbe928705 (1b3ba27e3d24144a95e22b85964ee66c57b919caa605abc7cd189aa773f91224)"
+time="2023-07-27T15:46:11.753713835-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 7f2645d2936129f0b9f92167f190a198cbb2aa3d7177a4a1f74d4f90f10436b2 c5f32ab011102565cfee9e0a65d36ca3d9c36a6f64d0529ec13f7a0af32457c2], retrying...."
+time="2023-07-27T15:46:11.783472598-06:00" level=info msg="Removing stale sandbox 9ab7485157074e217357b15a9a4ef1daec5f8d487752c4a02007441948ff9feb (49a10d683d9d22e1c87641f4788d1b18010081710fcc076834ba5faa6b7bce4c)"
+time="2023-07-27T15:46:11.892449076-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 7f2645d2936129f0b9f92167f190a198cbb2aa3d7177a4a1f74d4f90f10436b2 5ddbed9431952741760b290fefc0413209129a8d1da0d46f92bcf6301d94b1fc], retrying...."
+time="2023-07-27T15:46:11.922272724-06:00" level=info msg="Removing stale sandbox 9e400d9f62b67d4a406a5c967270a44bc2c918c530257a26b7dcbb6b047be7fb (596996b198a67dfa65d22b60b62e75d516dc84c04a139bb8e04c8501ee93d820)"
+time="2023-07-27T15:46:12.035505854-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 7f2645d2936129f0b9f92167f190a198cbb2aa3d7177a4a1f74d4f90f10436b2 4af1ecddec63c071ae3e9e37895036200fc015aaaad8e0e491955a89fe537382], retrying...."
+time="2023-07-27T15:46:12.063941964-06:00" level=info msg="Removing stale sandbox cd5c841bed76e4c9f33fe265b24d6ba73ad27f74697b5f2b2928aa3e1d51caca (2eb87a3d534135c79f8c6ffd114fd7ffc14b42817b449ddd5681800eec1a7bf3)"
+time="2023-07-27T15:46:12.168470569-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 7f2645d2936129f0b9f92167f190a198cbb2aa3d7177a4a1f74d4f90f10436b2 3509312f1d5f4ff3363245d2f76abd945219fd4ac58c4af51ffea8577965a972], retrying...."
+time="2023-07-27T15:46:12.198060718-06:00" level=info msg="Removing stale sandbox d09d1f175687bd073310a27d1faffce3c7d80a01468ad7a5966608e79eadb86c (3057ca6e2c476d1caa3741c2d6590a2a06fa4126737d4686efd73c9fed143c85)"
+time="2023-07-27T15:46:12.303709534-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 7f2645d2936129f0b9f92167f190a198cbb2aa3d7177a4a1f74d4f90f10436b2 f5ef60462609d546cbca200f8b6adac27c6db6178e320bda58d08e27a8906e3f], retrying...."
+time="2023-07-27T15:46:12.333794864-06:00" level=info msg="Removing stale sandbox 0d750bd1a0ad567444fb6bf89ed2cecddb45b7765e96036c1c0366dc084dbd46 (fc55963ef559443cf47620afca18c329402725bb18d74a53dbc6f413c1bf7916)"
+time="2023-07-27T15:46:12.365861117-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 20049fbd466f19719c955c8681af7462a54cbc13ca82d50fd48f629f975d300c e31756f5d7b791d01cecf45d01cf766d9dffc7d6c5647bf954616904e6a2ecdb], retrying...."
+time="2023-07-27T15:46:12.395832902-06:00" level=info msg="Removing stale sandbox 1173c5b02d8982374979f68587be7e333781cd83c75656bab3c9293b92b73077 (f5b018af0e69829fa85b79ba985f5c1a73432ecce6cd09b17c52965a80434080)"
+time="2023-07-27T15:46:12.421638508-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 20049fbd466f19719c955c8681af7462a54cbc13ca82d50fd48f629f975d300c 0d85a5f14aae559c46bcedc6e793c5648e2e0f1e2636835329350d804901ac61], retrying...."
+time="2023-07-27T15:46:12.450921874-06:00" level=info msg="Removing stale sandbox 219fde85496c5e0faa23d56329df52d8eb4b778af3805e2dc87070dc39ec86e7 (350c52cff2f531a2094ee6cb37dd2952d4dc1fb993e332c283c33024ce118ad5)"
+time="2023-07-27T15:46:12.476867331-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 20049fbd466f19719c955c8681af7462a54cbc13ca82d50fd48f629f975d300c f828e09b0a0ada83934a2eab56543c3554f2f25d96021814a586e9bdf6cc6e89], retrying...."
+time="2023-07-27T15:46:12.506858770-06:00" level=info msg="Removing stale sandbox 42eed108b52a2653d36cb4fe555b8145675233548dcebe132b3b54cbaf440387 (3f183663d58d64d14dda3eb8f947b7434ea13f920a21c7996941fb2cdbb4d824)"
+time="2023-07-27T15:46:12.538444856-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 20049fbd466f19719c955c8681af7462a54cbc13ca82d50fd48f629f975d300c cf1ee8b2268da22d74fe2b8900813e6b21a5c21599b5cde9cbe2636ad340e89d], retrying...."
+time="2023-07-27T15:46:12.567060175-06:00" level=info msg="Removing stale sandbox 43e4ba78cd5318009c6a2f43d32ee0a1596e1e688a8ef0781ba5360324c5191e (113d1cec7660009f0b7e6b5d38b7e893f150796866ee3d8a7a3f59974f332dd0)"
+time="2023-07-27T15:46:12.677488106-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 7f2645d2936129f0b9f92167f190a198cbb2aa3d7177a4a1f74d4f90f10436b2 5f30246b1323e7e4e6eba8d5f37fe324af5cb565b38295a12876a9ba08e65c3f], retrying...."
+time="2023-07-27T15:46:12.709122732-06:00" level=info msg="Removing stale sandbox 4fb1737bfefe05d5c70b1089443bd67689352d90c5c61c9b1072d08a106158d6 (dae7c1a37f3093b8cee69bc6b98922a017347eef65d025e53918758c2b2cbc88)"
+time="2023-07-27T15:46:12.823537760-06:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint 7f2645d2936129f0b9f92167f190a198cbb2aa3d7177a4a1f74d4f90f10436b2 45af8b5d0a2add511eb5478b04c62f8100630947785ca630d8a9654aa12f74a6], retrying...."
+time="2023-07-27T15:46:13.151949267-06:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+time="2023-07-27T15:46:13.370427821-06:00" level=info msg="Firewalld: interface docker0 already part of docker zone, returning"
+time="2023-07-27T15:46:13.805067794-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:13.805539028-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:13.904129565-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:13.904276652-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:14.098894337-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:14.099286067-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:14.119870707-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:14.120002483-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:14.291900885-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:14.296974669-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:14.297323824-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:14.298220959-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/350c52cff2f531a2094ee6cb37dd2952d4dc1fb993e332c283c33024ce118ad5 pid=231422 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:14.354914342-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:14.355129472-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:14.463976276-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:14.464241390-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:14.464282015-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:14.464874604-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/f5b018af0e69829fa85b79ba985f5c1a73432ecce6cd09b17c52965a80434080 pid=231469 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:14.468381001-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:14.468583693-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:14.468649365-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:14.469459580-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/1b3ba27e3d24144a95e22b85964ee66c57b919caa605abc7cd189aa773f91224 pid=231479 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:14.551617141-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:14.551983932-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:14.739735219-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:14.740145828-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:14.758891620-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:14.758996590-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:14.759125163-06:00" level=warning msg="path in container /dev/kmsg already exists in privileged mode" container=3057ca6e2c476d1caa3741c2d6590a2a06fa4126737d4686efd73c9fed143c85
+time="2023-07-27T15:46:14.948621613-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:14.949017119-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:15.052479691-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:15.052754716-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:15.052825773-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:15.059775563-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/fc55963ef559443cf47620afca18c329402725bb18d74a53dbc6f413c1bf7916 pid=231612 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:15.065305670-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:15.065812200-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:15.066034307-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:15.066780105-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/3057ca6e2c476d1caa3741c2d6590a2a06fa4126737d4686efd73c9fed143c85 pid=231622 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:15.214802442-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:15.215849684-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:15.397913198-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:15.398281108-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:15.417731315-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:15.418271980-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:15.418485761-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:15.419189525-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/596996b198a67dfa65d22b60b62e75d516dc84c04a139bb8e04c8501ee93d820 pid=231743 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:15.459474487-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:15.459769030-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:15.459837083-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:15.460414762-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/2eb87a3d534135c79f8c6ffd114fd7ffc14b42817b449ddd5681800eec1a7bf3 pid=231735 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:15.561132850-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:15.561352992-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:15.733033715-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:15.735495784-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:15.735558107-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:15.736079650-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/3f183663d58d64d14dda3eb8f947b7434ea13f920a21c7996941fb2cdbb4d824 pid=231840 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:15.768277255-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:15.768382235-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:15.811324529-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:15.811704960-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:15.811787067-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:15.812515274-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/95582d8738d799c2d053bfaac606c657991664b9a5915eb5491df72e57f91ebb pid=231905 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:16.233979347-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:16.234386406-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:16.550462004-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:16.550962300-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:16.551404890-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:16.552770249-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/113d1cec7660009f0b7e6b5d38b7e893f150796866ee3d8a7a3f59974f332dd0 pid=232069 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:16.566460050-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:16.566580374-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:16.648007624-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:16.655605027-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:16.655889850-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:16.660196553-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/dae7c1a37f3093b8cee69bc6b98922a017347eef65d025e53918758c2b2cbc88 pid=232098 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:16.963517544-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:16.963663163-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:16.968099728-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:16.969100914-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:16.969202339-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:16.970648352-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/d2c59bcb03ee896d6adfbd633e4648f1649d8ae69fdc2a8af0f1cd356740a70e pid=232177 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:17.165948851-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:17.166571877-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:17.166847551-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:17.167691674-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/bf37ebe4c1c89b307b68e123730d9b94c9b392b3e1ef40f8aff0b5bb2eab776e pid=232229 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:17.648633671-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:17.648989102-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:17.664446661-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:17.664932569-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:17.665201493-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:17.667978993-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/49a10d683d9d22e1c87641f4788d1b18010081710fcc076834ba5faa6b7bce4c pid=232351 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:18.203804873-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:18.204087802-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:18.204179065-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:18.204817408-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/3a875bad57b4d0172bd59b63a3417ba54a5fd593c62319461b54f394323586d5 pid=232435 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:18.281782694-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:18.282017742-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:18.282070311-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:18.282576942-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 pid=232491 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:18.626665514-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:18.626993623-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:18.627198769-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:18.627964013-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/03b7dece3a596b50e8660f47846f361ab4bde50011b3f0f8013719dd0043a6ec pid=232555 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:21.126976892-06:00" level=info msg="Loading containers: done."
+time="2023-07-27T15:46:21.706627598-06:00" level=warning msg="WARNING: API is accessible on http://192.168.100.7:2375 without encryption.\n         Access to the remote API is equivalent to root access on the host. Refer\n         to the 'Docker daemon attack surface' section in the documentation for\n         more information: https://docs.docker.com/go/attack-surface/"
+time="2023-07-27T15:46:21.707969287-06:00" level=info msg="Docker daemon" commit=4ffc614 graphdriver=overlay2 version=24.0.4
+time="2023-07-27T15:46:21.708470990-06:00" level=info msg="Daemon has completed initialization"
+time="2023-07-27T15:46:23.537188428-06:00" level=info msg="ignoring event" container=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:23.539232131-06:00" level=info msg="shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094
+time="2023-07-27T15:46:23.539678074-06:00" level=warning msg="cleaning up after shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 namespace=moby
+time="2023-07-27T15:46:23.539778123-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:23.595820547-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:23-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=232899 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:24.881770729-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:24.882215623-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:25.744806124-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:25.745049773-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:25.745105904-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:25.745978634-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 pid=233019 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:28.642274488-06:00" level=info msg="ignoring event" container=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:28.645423894-06:00" level=info msg="shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094
+time="2023-07-27T15:46:28.660417954-06:00" level=warning msg="cleaning up after shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 namespace=moby
+time="2023-07-27T15:46:28.733598141-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:28.775648527-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:28-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233149 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:28.930766206-06:00" level=info msg="API listen on /var/run/docker.sock"
+time="2023-07-27T15:46:28.930826712-06:00" level=info msg="API listen on 192.168.100.7:2375"
+time="2023-07-27T15:46:30.142916445-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:30.143193885-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:30.594475544-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:30.597967010-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:30.598198361-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:30.599012891-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 pid=233299 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:32.132441869-06:00" level=info msg="ignoring event" container=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:32.132469803-06:00" level=info msg="shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094
+time="2023-07-27T15:46:32.133399034-06:00" level=warning msg="cleaning up after shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 namespace=moby
+time="2023-07-27T15:46:32.133491109-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:32.160337586-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:32-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233365 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:32.700794710-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:32.701092726-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:32.999786897-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:33.000358669-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:33.000450009-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:33.001150299-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 pid=233422 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:34.117663165-06:00" level=info msg="shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094
+time="2023-07-27T15:46:34.118054449-06:00" level=info msg="ignoring event" container=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:34.118145709-06:00" level=warning msg="cleaning up after shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 namespace=moby
+time="2023-07-27T15:46:34.118246263-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:34.138883978-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:34-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233481 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:35.047187625-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:35.048399878-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:35.376945044-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:35.377220457-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:35.377291948-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:35.378040833-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 pid=233542 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:36.972333565-06:00" level=info msg="shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094
+time="2023-07-27T15:46:36.972965245-06:00" level=warning msg="cleaning up after shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 namespace=moby
+time="2023-07-27T15:46:36.972357906-06:00" level=info msg="ignoring event" container=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:36.973120822-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:37.001458790-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:36-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233602 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:38.734312059-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:38.734571537-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:39.006431105-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:39.006641227-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:39.006690421-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:39.007401037-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 pid=233655 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:40.182445547-06:00" level=info msg="ignoring event" container=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:40.182780087-06:00" level=info msg="shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094
+time="2023-07-27T15:46:40.183930708-06:00" level=warning msg="cleaning up after shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 namespace=moby
+time="2023-07-27T15:46:40.184012747-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:40.216955837-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:40-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233713 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:43.577399940-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:46:43.577565629-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:46:43.795004682-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:46:43.795185868-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:46:43.795227757-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:46:43.795858597-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 pid=233812 runtime=io.containerd.runc.v2
+time="2023-07-27T15:46:44.968561940-06:00" level=info msg="ignoring event" container=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:44.968736759-06:00" level=info msg="shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094
+time="2023-07-27T15:46:44.969236943-06:00" level=warning msg="cleaning up after shim disconnected" id=18c52305609d59e21dfca39d23bf6faaee6aa035488a5fad4c37fb6f46bdd094 namespace=moby
+time="2023-07-27T15:46:44.969294572-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:44.993268495-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:44-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233880 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:46.463653674-06:00" level=info msg="shim disconnected" id=d2c59bcb03ee896d6adfbd633e4648f1649d8ae69fdc2a8af0f1cd356740a70e
+time="2023-07-27T15:46:46.464060804-06:00" level=warning msg="cleaning up after shim disconnected" id=d2c59bcb03ee896d6adfbd633e4648f1649d8ae69fdc2a8af0f1cd356740a70e namespace=moby
+time="2023-07-27T15:46:46.464265436-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:46.464323176-06:00" level=info msg="ignoring event" container=d2c59bcb03ee896d6adfbd633e4648f1649d8ae69fdc2a8af0f1cd356740a70e module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:46.501855978-06:00" level=info msg="ignoring event" container=bf37ebe4c1c89b307b68e123730d9b94c9b392b3e1ef40f8aff0b5bb2eab776e module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:46.503432252-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:46-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233942 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:46.503916955-06:00" level=info msg="shim disconnected" id=bf37ebe4c1c89b307b68e123730d9b94c9b392b3e1ef40f8aff0b5bb2eab776e
+time="2023-07-27T15:46:46.504209140-06:00" level=warning msg="cleaning up after shim disconnected" id=bf37ebe4c1c89b307b68e123730d9b94c9b392b3e1ef40f8aff0b5bb2eab776e namespace=moby
+time="2023-07-27T15:46:46.504317279-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:46.506463238-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=d2c59bcb03ee896d6adfbd633e4648f1649d8ae69fdc2a8af0f1cd356740a70e daemonShuttingDown=false error="restart canceled" execDuration=26.954295892s exitStatus="{0 2023-07-27 21:46:46.411807456 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:46.543967694-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:46-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233959 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:46.546578608-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=bf37ebe4c1c89b307b68e123730d9b94c9b392b3e1ef40f8aff0b5bb2eab776e daemonShuttingDown=false error="restart canceled" execDuration=26.308294773s exitStatus="{0 2023-07-27 21:46:46.455203878 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:46.574639378-06:00" level=info msg="shim disconnected" id=95582d8738d799c2d053bfaac606c657991664b9a5915eb5491df72e57f91ebb
+time="2023-07-27T15:46:46.575020399-06:00" level=warning msg="cleaning up after shim disconnected" id=95582d8738d799c2d053bfaac606c657991664b9a5915eb5491df72e57f91ebb namespace=moby
+time="2023-07-27T15:46:46.575110605-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:46.575055386-06:00" level=info msg="ignoring event" container=95582d8738d799c2d053bfaac606c657991664b9a5915eb5491df72e57f91ebb module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:46.609256134-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:46-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=233982 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:46.611312504-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=95582d8738d799c2d053bfaac606c657991664b9a5915eb5491df72e57f91ebb daemonShuttingDown=false error="restart canceled" execDuration=27.191026519s exitStatus="{0 2023-07-27 21:46:46.532021278 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:48.644226773-06:00" level=info msg="shim disconnected" id=03b7dece3a596b50e8660f47846f361ab4bde50011b3f0f8013719dd0043a6ec
+time="2023-07-27T15:46:48.644267570-06:00" level=info msg="ignoring event" container=03b7dece3a596b50e8660f47846f361ab4bde50011b3f0f8013719dd0043a6ec module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:48.644460589-06:00" level=warning msg="cleaning up after shim disconnected" id=03b7dece3a596b50e8660f47846f361ab4bde50011b3f0f8013719dd0043a6ec namespace=moby
+time="2023-07-27T15:46:48.644518166-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:48.664707806-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:48-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234055 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:48.666265224-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=03b7dece3a596b50e8660f47846f361ab4bde50011b3f0f8013719dd0043a6ec daemonShuttingDown=false error="restart canceled" execDuration=27.582396648s exitStatus="{0 2023-07-27 21:46:48.619803339 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:48.998932254-06:00" level=info msg="ignoring event" container=3a875bad57b4d0172bd59b63a3417ba54a5fd593c62319461b54f394323586d5 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:48.999078290-06:00" level=info msg="shim disconnected" id=3a875bad57b4d0172bd59b63a3417ba54a5fd593c62319461b54f394323586d5
+time="2023-07-27T15:46:48.999288058-06:00" level=warning msg="cleaning up after shim disconnected" id=3a875bad57b4d0172bd59b63a3417ba54a5fd593c62319461b54f394323586d5 namespace=moby
+time="2023-07-27T15:46:48.999418393-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:49.023872821-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:49-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234095 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:49.025474028-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=3a875bad57b4d0172bd59b63a3417ba54a5fd593c62319461b54f394323586d5 daemonShuttingDown=false error="restart canceled" execDuration=27.959600534s exitStatus="{143 2023-07-27 21:46:48.967000317 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:51.589690167-06:00" level=info msg="ignoring event" container=3057ca6e2c476d1caa3741c2d6590a2a06fa4126737d4686efd73c9fed143c85 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:51.589699478-06:00" level=info msg="shim disconnected" id=3057ca6e2c476d1caa3741c2d6590a2a06fa4126737d4686efd73c9fed143c85
+time="2023-07-27T15:46:51.590389435-06:00" level=warning msg="cleaning up after shim disconnected" id=3057ca6e2c476d1caa3741c2d6590a2a06fa4126737d4686efd73c9fed143c85 namespace=moby
+time="2023-07-27T15:46:51.590476435-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:51.623683687-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:51-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234188 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:51.625655777-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=3057ca6e2c476d1caa3741c2d6590a2a06fa4126737d4686efd73c9fed143c85 daemonShuttingDown=false error="restart canceled" execDuration=33.440301419s exitStatus="{0 2023-07-27 21:46:51.556835827 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:51.996889923-06:00" level=info msg="ignoring event" container=1b3ba27e3d24144a95e22b85964ee66c57b919caa605abc7cd189aa773f91224 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:52.019604743-06:00" level=info msg="shim disconnected" id=1b3ba27e3d24144a95e22b85964ee66c57b919caa605abc7cd189aa773f91224
+time="2023-07-27T15:46:52.019928837-06:00" level=warning msg="cleaning up after shim disconnected" id=1b3ba27e3d24144a95e22b85964ee66c57b919caa605abc7cd189aa773f91224 namespace=moby
+time="2023-07-27T15:46:52.020016379-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:52.034274832-06:00" level=info msg="ignoring event" container=2eb87a3d534135c79f8c6ffd114fd7ffc14b42817b449ddd5681800eec1a7bf3 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:52.035087101-06:00" level=info msg="shim disconnected" id=2eb87a3d534135c79f8c6ffd114fd7ffc14b42817b449ddd5681800eec1a7bf3
+time="2023-07-27T15:46:52.035371420-06:00" level=warning msg="cleaning up after shim disconnected" id=2eb87a3d534135c79f8c6ffd114fd7ffc14b42817b449ddd5681800eec1a7bf3 namespace=moby
+time="2023-07-27T15:46:52.035459543-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:52.058819620-06:00" level=info msg="ignoring event" container=49a10d683d9d22e1c87641f4788d1b18010081710fcc076834ba5faa6b7bce4c module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:52.061799640-06:00" level=info msg="shim disconnected" id=49a10d683d9d22e1c87641f4788d1b18010081710fcc076834ba5faa6b7bce4c
+time="2023-07-27T15:46:52.062019466-06:00" level=warning msg="cleaning up after shim disconnected" id=49a10d683d9d22e1c87641f4788d1b18010081710fcc076834ba5faa6b7bce4c namespace=moby
+time="2023-07-27T15:46:52.062093788-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:52.063827305-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:52-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234233 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:52.066296059-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=1b3ba27e3d24144a95e22b85964ee66c57b919caa605abc7cd189aa773f91224 daemonShuttingDown=false error="restart canceled" execDuration=35.750892925s exitStatus="{0 2023-07-27 21:46:51.893225919 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:52.087267850-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:52-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234238 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:52.089450779-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=2eb87a3d534135c79f8c6ffd114fd7ffc14b42817b449ddd5681800eec1a7bf3 daemonShuttingDown=false error="restart canceled" execDuration=33.036169723s exitStatus="{0 2023-07-27 21:46:51.921196986 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:52.103701960-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:52-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234252 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:52.105689612-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=49a10d683d9d22e1c87641f4788d1b18010081710fcc076834ba5faa6b7bce4c daemonShuttingDown=false error="restart canceled" execDuration=31.517107843s exitStatus="{0 2023-07-27 21:46:51.951639176 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:46:52.218927319-06:00" level=info msg="shim disconnected" id=dae7c1a37f3093b8cee69bc6b98922a017347eef65d025e53918758c2b2cbc88
+time="2023-07-27T15:46:52.219000960-06:00" level=info msg="ignoring event" container=dae7c1a37f3093b8cee69bc6b98922a017347eef65d025e53918758c2b2cbc88 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:46:52.219346828-06:00" level=warning msg="cleaning up after shim disconnected" id=dae7c1a37f3093b8cee69bc6b98922a017347eef65d025e53918758c2b2cbc88 namespace=moby
+time="2023-07-27T15:46:52.219510721-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:46:52.246479037-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:46:52-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234283 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:46:52.247988199-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=dae7c1a37f3093b8cee69bc6b98922a017347eef65d025e53918758c2b2cbc88 daemonShuttingDown=false error="restart canceled" execDuration=31.924469322s exitStatus="{0 2023-07-27 21:46:52.185021987 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:47:02.708212903-06:00" level=info msg="Container failed to exit within 10s of signal 15 - using the force" container=596996b198a67dfa65d22b60b62e75d516dc84c04a139bb8e04c8501ee93d820
+time="2023-07-27T15:47:02.790960391-06:00" level=info msg="ignoring event" container=596996b198a67dfa65d22b60b62e75d516dc84c04a139bb8e04c8501ee93d820 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:47:02.791290307-06:00" level=info msg="shim disconnected" id=596996b198a67dfa65d22b60b62e75d516dc84c04a139bb8e04c8501ee93d820
+time="2023-07-27T15:47:02.791487080-06:00" level=warning msg="cleaning up after shim disconnected" id=596996b198a67dfa65d22b60b62e75d516dc84c04a139bb8e04c8501ee93d820 namespace=moby
+time="2023-07-27T15:47:02.791595358-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:47:02.816995702-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:47:02-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234360 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:47:02.819057889-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=596996b198a67dfa65d22b60b62e75d516dc84c04a139bb8e04c8501ee93d820 daemonShuttingDown=false error="restart canceled" execDuration=44.302572277s exitStatus="{137 2023-07-27 21:47:02.757494546 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:47:03.281047050-06:00" level=info msg="shim disconnected" id=113d1cec7660009f0b7e6b5d38b7e893f150796866ee3d8a7a3f59974f332dd0
+time="2023-07-27T15:47:03.281376177-06:00" level=info msg="ignoring event" container=113d1cec7660009f0b7e6b5d38b7e893f150796866ee3d8a7a3f59974f332dd0 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:47:03.281565599-06:00" level=warning msg="cleaning up after shim disconnected" id=113d1cec7660009f0b7e6b5d38b7e893f150796866ee3d8a7a3f59974f332dd0 namespace=moby
+time="2023-07-27T15:47:03.281648329-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:47:03.304325075-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:47:03-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234400 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:47:03.306065629-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=113d1cec7660009f0b7e6b5d38b7e893f150796866ee3d8a7a3f59974f332dd0 daemonShuttingDown=false error="restart canceled" execDuration=43.576566048s exitStatus="{0 2023-07-27 21:47:03.251394702 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:47:07.117401350-06:00" level=info msg="shim disconnected" id=350c52cff2f531a2094ee6cb37dd2952d4dc1fb993e332c283c33024ce118ad5
+time="2023-07-27T15:47:07.117781764-06:00" level=warning msg="cleaning up after shim disconnected" id=350c52cff2f531a2094ee6cb37dd2952d4dc1fb993e332c283c33024ce118ad5 namespace=moby
+time="2023-07-27T15:47:07.117590052-06:00" level=info msg="ignoring event" container=350c52cff2f531a2094ee6cb37dd2952d4dc1fb993e332c283c33024ce118ad5 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:47:07.118451811-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:47:07.120216324-06:00" level=info msg="shim disconnected" id=f5b018af0e69829fa85b79ba985f5c1a73432ecce6cd09b17c52965a80434080
+time="2023-07-27T15:47:07.120460342-06:00" level=warning msg="cleaning up after shim disconnected" id=f5b018af0e69829fa85b79ba985f5c1a73432ecce6cd09b17c52965a80434080 namespace=moby
+time="2023-07-27T15:47:07.120549469-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:47:07.120737915-06:00" level=info msg="ignoring event" container=f5b018af0e69829fa85b79ba985f5c1a73432ecce6cd09b17c52965a80434080 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:47:07.125928430-06:00" level=info msg="ignoring event" container=fc55963ef559443cf47620afca18c329402725bb18d74a53dbc6f413c1bf7916 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:47:07.126510957-06:00" level=info msg="shim disconnected" id=fc55963ef559443cf47620afca18c329402725bb18d74a53dbc6f413c1bf7916
+time="2023-07-27T15:47:07.126795873-06:00" level=warning msg="cleaning up after shim disconnected" id=fc55963ef559443cf47620afca18c329402725bb18d74a53dbc6f413c1bf7916 namespace=moby
+time="2023-07-27T15:47:07.126888949-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:47:07.161256931-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:47:07-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234487 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:47:07.163330440-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:47:07-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234495 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:47:07.163436706-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=f5b018af0e69829fa85b79ba985f5c1a73432ecce6cd09b17c52965a80434080 daemonShuttingDown=false error="restart canceled" execDuration=50.707576998s exitStatus="{0 2023-07-27 21:47:07.0780636 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:47:07.163970036-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:47:07-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234486 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:47:07.165213697-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=fc55963ef559443cf47620afca18c329402725bb18d74a53dbc6f413c1bf7916 daemonShuttingDown=false error="restart canceled" execDuration=48.718951058s exitStatus="{0 2023-07-27 21:47:07.08094422 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:47:07.165666557-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=350c52cff2f531a2094ee6cb37dd2952d4dc1fb993e332c283c33024ce118ad5 daemonShuttingDown=false error="restart canceled" execDuration=50.816820553s exitStatus="{0 2023-07-27 21:47:07.065318295 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:47:07.383932352-06:00" level=info msg="ignoring event" container=3f183663d58d64d14dda3eb8f947b7434ea13f920a21c7996941fb2cdbb4d824 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T15:47:07.390647755-06:00" level=info msg="shim disconnected" id=3f183663d58d64d14dda3eb8f947b7434ea13f920a21c7996941fb2cdbb4d824
+time="2023-07-27T15:47:07.394710804-06:00" level=warning msg="cleaning up after shim disconnected" id=3f183663d58d64d14dda3eb8f947b7434ea13f920a21c7996941fb2cdbb4d824 namespace=moby
+time="2023-07-27T15:47:07.394813416-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T15:47:07.442454974-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T15:47:07-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=234550 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T15:47:07.449421649-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=3f183663d58d64d14dda3eb8f947b7434ea13f920a21c7996941fb2cdbb4d824 daemonShuttingDown=false error="restart canceled" execDuration=48.750672969s exitStatus="{0 2023-07-27 21:47:07.127953296 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T15:47:23.049419044-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:47:23.049776121-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:47:23.155285015-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:47:23.155389379-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:47:23.295721756-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:47:23.295830464-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:47:23.313037622-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:47:23.313471650-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:47:23.313530337-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:47:23.314703146-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05 pid=234711 runtime=io.containerd.runc.v2
+time="2023-07-27T15:47:23.429501949-06:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers: [nameserver 8.8.8.8 nameserver 8.8.4.4]"
+time="2023-07-27T15:47:23.429655942-06:00" level=info msg="IPv6 enabled; Adding default IPv6 external servers: [nameserver 2001:4860:4860::8888 nameserver 2001:4860:4860::8844]"
+time="2023-07-27T15:47:23.488663309-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:47:23.488968731-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:47:23.489075714-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:47:23.489985010-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0 pid=234748 runtime=io.containerd.runc.v2
+time="2023-07-27T15:47:23.503873962-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:47:23.504045528-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:47:23.504077141-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:47:23.504561138-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/38ec0edf6bccd3d1712f970956151c183b0a527f10d3cab40fff987f9009ad79 pid=234766 runtime=io.containerd.runc.v2
+time="2023-07-27T15:47:23.534009010-06:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2023-07-27T15:47:23.534429667-06:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2023-07-27T15:47:23.534658157-06:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2023-07-27T15:47:23.536018246-06:00" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94 pid=234796 runtime=io.containerd.runc.v2
+time="2023-07-27T19:19:04.341895902-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0-json.log: no space left on device" message=
+Failed to write to log, write /dev/stderr: no space left on device
+Failed to write to log, write /dev/stderr: no space left on device
+time="2023-07-27T19:19:45.829331024-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+time="2023-07-27T19:19:47.599801418-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0-json.log: no space left on device" message=
+time="2023-07-27T19:19:47.599814584-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+time="2023-07-27T19:19:47.791113861-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+time="2023-07-27T19:19:47.791663673-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0-json.log: no space left on device" message=
+Failed to write to log, write /dev/stderr: no space left on device
+Failed to write to log, write /dev/stderr: no space left on device
+Failed to write to log, write /dev/stderr: no space left on device
+time="2023-07-27T19:19:49.157092013-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+time="2023-07-27T19:19:49.421759324-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+time="2023-07-27T19:19:49.458247881-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+Failed to write to log, write /dev/stderr: no space left on device
+time="2023-07-27T19:19:49.670504392-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+time="2023-07-27T19:19:49.816620826-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94/801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94-json.log: no space left on device" message=
+time="2023-07-27T19:19:49.919262131-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94/801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94-json.log: no space left on device" message=
+Failed to write to log, write /dev/stderr: no space left on device
+Failed to write to log, write /dev/stderr: no space left on device
+time="2023-07-27T19:19:50.064015386-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94/801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94-json.log: no space left on device" message=
+Failed to write to log, write /dev/stderr: no space left on device
+time="2023-07-27T19:19:50.445277770-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+Failed to write to log, write /dev/stderr: no space left on device
+Failed to write to log, write /dev/stderr: no space left on device
+time="2023-07-27T19:19:50.731573551-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0/7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0-json.log: no space left on device" message=
+time="2023-07-27T19:24:16.761537590-06:00" level=error msg="Error writing log message" driver=json-file error="error writing log entry: write /home/devjare/docker/containers/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05/c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05-json.log: no space left on device" message=
+time="2023-07-27T19:28:16.427146805-06:00" level=info msg="ignoring event" container=c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T19:28:16.536731869-06:00" level=info msg="shim disconnected" id=c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05
+time="2023-07-27T19:28:16.537093537-06:00" level=warning msg="cleaning up after shim disconnected" id=c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05 namespace=moby
+time="2023-07-27T19:28:16.537191192-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T19:28:16.599858026-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T19:28:16-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=295903 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T19:28:16.625500465-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=c47fc685cd79c1430a4f4752c103c0b11d8804565ea513b5aca2b37d45be1a05 daemonShuttingDown=false error="restart canceled" execDuration=3h40m52.594818184s exitStatus="{137 2023-07-28 01:28:16.382332117 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T19:28:30.660859610-06:00" level=error msg="Container failed to exit within 10s of kill - trying direct SIGKILL" container=801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94 error="context deadline exceeded"
+time="2023-07-27T19:28:32.665650499-06:00" level=error msg="Handler for DELETE /v1.43/containers/fs_consumer returned error: Could not kill running container 801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94, cannot remove - tried to kill container, but did not receive an exit event"
+time="2023-07-27T19:28:36.058764943-06:00" level=info msg="shim disconnected" id=7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0
+time="2023-07-27T19:28:36.058865600-06:00" level=info msg="ignoring event" container=7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T19:28:36.059309808-06:00" level=warning msg="cleaning up after shim disconnected" id=7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0 namespace=moby
+time="2023-07-27T19:28:36.059390107-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T19:28:36.082751220-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T19:28:36-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=296098 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T19:28:36.091399220-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=7a688d8fcff0b5085af9269c637302ad6aac34a61d2030afdd78514b5cb603e0 daemonShuttingDown=false error="restart canceled" execDuration=3h41m11.986161057s exitStatus="{137 2023-07-28 01:28:36.029940516 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T19:28:42.756732235-06:00" level=info msg="shim disconnected" id=38ec0edf6bccd3d1712f970956151c183b0a527f10d3cab40fff987f9009ad79
+time="2023-07-27T19:28:42.756788656-06:00" level=info msg="ignoring event" container=38ec0edf6bccd3d1712f970956151c183b0a527f10d3cab40fff987f9009ad79 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2023-07-27T19:28:42.776473618-06:00" level=warning msg="cleaning up after shim disconnected" id=38ec0edf6bccd3d1712f970956151c183b0a527f10d3cab40fff987f9009ad79 namespace=moby
+time="2023-07-27T19:28:42.776683836-06:00" level=info msg="cleaning up dead shim"
+time="2023-07-27T19:28:42.795281258-06:00" level=warning msg="cleanup warnings time=\"2023-07-27T19:28:42-06:00\" level=info msg=\"starting signal loop\" namespace=moby pid=296196 runtime=io.containerd.runc.v2\n"
+time="2023-07-27T19:28:42.797142526-06:00" level=warning msg="ShouldRestart failed, container will not be restarted" container=38ec0edf6bccd3d1712f970956151c183b0a527f10d3cab40fff987f9009ad79 daemonShuttingDown=false error="restart canceled" execDuration=3h41m18.713826075s exitStatus="{137 2023-07-28 01:28:42.731546991 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+time="2023-07-27T19:29:00.305289115-06:00" level=error msg="Container failed to exit within 10s of kill - trying direct SIGKILL" container=801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94 error="context deadline exceeded"
+time="2023-07-27T19:29:02.305780820-06:00" level=error msg="Handler for DELETE /v1.43/containers/fs_consumer returned error: Could not kill running container 801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94, cannot remove - tried to kill container, but did not receive an exit event"
+time="2023-07-27T19:29:18.661302096-06:00" level=info msg="Container failed to exit within 10s of signal 15 - using the force" container=801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94
+time="2023-07-27T19:29:28.719271511-06:00" level=error msg="Container failed to exit within 10s of kill - trying direct SIGKILL" container=801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94 error="context deadline exceeded"
+time="2023-07-27T19:29:32.720886136-06:00" level=error msg="error killing container: context deadline exceeded" container=801ad3a8c688396f75a6e545437cebcf0f336cf5f040cb2127fe7b42c8e7ba94 error="tried to kill container, but did not receive an exit event"
+time="2023-07-27T19:29:32.733512557-06:00" level=error msg="Handler for POST /v1.43/containers/fs_consumer/stop returned error: cannot stop container: fs_consumer: tried to kill container, but did not receive an exit event"
